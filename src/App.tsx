@@ -1,13 +1,7 @@
 import { Toaster, toast } from 'sonner'
 import { NewNote } from './components/new-note'
-import { Note } from './components/note'
+import { Note, INote } from './components/note'
 import { ChangeEvent, useState } from 'react'
-
-interface INote {
-  id: string
-  date: Date
-  content: string
-}
 
 export function App() {
   const [query, setQuery] = useState<string>('')
