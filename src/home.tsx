@@ -3,7 +3,7 @@ import { NewNote } from './components/new-note'
 import { Note, INote } from './components/note'
 import { ChangeEvent, useState } from 'react'
 
-export function App() {
+export function Home() {
   const [query, setQuery] = useState<string>('')
   const [notes, setNotes] = useState<Array<INote>>(() => {
     const notesOnStore = localStorage.getItem('notes')
